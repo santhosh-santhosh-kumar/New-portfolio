@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div>
+    <div id="header">
+        <div class="container">
+          <nav class="headingContainer">
+            <h6 id="top-head"><span id="heading">S</span>ANTHOSH</h6>
+            <ul id="sideMenu">
+                <li class="sideMenu1"><a href="#header">Home</a></li>
+                <li class="sideMenu1"><a href="#about">About</a></li>
+                <li class="sideMenu1"><a href="#service">Service</a></li>
+                <li class="sideMenu1"><a href="#portfolio">Portfolio</a></li>
+                <li class="sideMenu1"><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </nav>
+
+          </div>
+        </div>
+        </div>
+    <!-- body -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myphoto.jpg">
+                </div>
+                <div class="about-col-2">
+                    <p class="name">Hey! there I'm santhoshkumar</p>
+                    <h1 class="sub-title1">Full stack developer</h1>
+                    <p>I'm a passionate web developer dedicated to crafting user-friendly, high-performance websites. With a strong foundation in both front-end and back-end technologies, I bring creativity and technical expertise to every project.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experiance')">Experiance</p>
+                        <p class="tab-links" onclick="openTab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Front-End</span><br>HTML, CSS, JavaScript, React</li>
+                            <li><span>Back-End</span><br>Node.js</li>
+                            <li><span>Database</span><br>SQL, MongoDB</li>
+                            </ul>
+                    </div>
+                    <div class="tab-contents" id="Experiance">
+                        <ul>
+                            <li><span>Web Development</span><br>Fresher</li>
+                            <li><span>UI/UX Design</span><br>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2012</span><br>HSC</li>
+                            <li><span>2018</span><br>B.Tech</li>
+                            <li><span>2023</span><br>Fullstack development course</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">MY Projects</h1>
+             <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png">
+                    <div class="layer">
+                    <h3>Spodify Clone</h3>
+                    <p>
+                        Creating a Spotify app clone using HTML, CSS, and JavaScript involves building a simplified version of the Spotify user interface with basic functionalities.</p>
+                    <a href="https://spotify-web-player-clone-dl8i.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+    
+                <div class="work">
+                    <img src="/images/work-2.png">
+                    <div class="layer">
+                    <h3>Receipe App</h3>
+                    <p>Creating a recipe app using React.js and implementing the Context API involves building a web application that allows users to view, search, and save recipes.</p>
+                    <a href="https://receipe-santhoshs-projects-7fb196a9.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="/images/work-3.png">
+                    <div class="layer">
+                    <h3>Full Stack</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ab modi excepturi iste optio. Dolorem minus eos rem</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">Mini Projects</h1>
+        <div class="services-list">
+            <div>
+                <a href="https://react-redux-task-bay.vercel.app/" target="_blank">
+
+                <i class="fa-solid fa-code"></i>
+                <h2>My shop</h2>
+                <p>Creating a online shop app using React.js and implementing the react Redux involves building a web application that allows users to view, add items to cart and remove it and increse or decrease qty.</p>
+            </a>
+            </div>
+            <div>
+                <a href="https://crud-operation2.vercel.app/">
+                <i class="fa-solid fa-crop"></i>
+                <h2>CRUD operation</h2>
+                <p>Creating a crud operation application using React.js and implementing the react formik involves building a web application that allows users to add datas and delete it .</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://task-iota-two.vercel.app/Career">
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Home Page Rout</h2>
+                <p>Creating a  application using React.js and implementing the react router-dom involves building a web application that allows users to routing the different pages in home page.</p>
+                </a>
+            </div>
+
+        </div> 
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contanct-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p style="color: black;"><i class="fa-solid fa-paper-plane" ></i> santhoshselvakumar51@gmail.com</p>
+        <p style="color: black;"><i class="fa-solid fa-square-phone"></i> 9361116112</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100009401581111" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="contanct-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" placeholder="Message" required rows="6"></textarea>
+                <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> santhoshkumar s</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
